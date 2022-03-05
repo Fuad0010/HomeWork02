@@ -21,7 +21,7 @@ namespace Task04
             double b = (a * 10) + 7;
             double sum = (b * 7) / 100;
 
-            Console.WriteLine($"{sum}");
+            Console.WriteLine(sum);
             
             
         
