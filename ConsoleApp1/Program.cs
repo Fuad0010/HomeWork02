@@ -13,10 +13,10 @@ namespace ConsoleApp1
             Alinan neticeden III ededin 3%-ni cix.
           */
 
-            int a = Convert.ToInt32(Console.ReadLine());
-            int b = Convert.ToInt32(Console.ReadLine());
-            int c = Convert.ToInt32(Console.ReadLine());
-            int d = Convert.ToInt32(Console.ReadLine());
+            double a = Convert.ToDouble(Console.ReadLine());
+            double b = Convert.ToDouble(Console.ReadLine());
+            double c = Convert.ToDouble(Console.ReadLine());
+            double d = Convert.ToDouble(Console.ReadLine());
 
             if (!( a >= 10000 && a < 100000 && 
                    b >= 10000 && b < 100000 && 
@@ -29,7 +29,7 @@ namespace ConsoleApp1
             a += c;
             b += d;
             double sum = a * b;
-            double f3 = (c * 3) / 100.0;
+            double f3 = (c * 3) / 100;
 
             Console.WriteLine(sum - f3);
 

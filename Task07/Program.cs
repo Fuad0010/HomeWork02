@@ -14,13 +14,13 @@ namespace Task07
           */
 
             int a = Convert.ToInt32(Console.ReadLine());
-            
+
 
             if (a < 10000 || a >= 100000)
             {
                 Console.WriteLine("5 reqemli eded deyil");
                 return;
-
+            }
                 int b = Convert.ToInt32(Console.ReadLine());
                 if (b < 10000 || b >= 100000)
                 {
@@ -28,19 +28,20 @@ namespace Task07
                     return;
                                  
                 }
-            }
-                int c = a + b;
-                
+               
+            
+            double c = a + b;
+
 
             if (c < 100000)
             {
-                int d = (c * 10) + 5;
+                double d = (c * 10) + 5;
                 double sum = d * 5 / 100.0;
                 Console.WriteLine($"{sum}");
             }
             else if (c < 1000000)
             {
-                int d = (c * 10) + 5;
+                double d = (c * 10) + 5;
                 double sum = d * 5 / 100.0;
                 Console.WriteLine($"{sum}");
             }

@@ -15,23 +15,12 @@ namespace Task08
             int a = Convert.ToInt32(Console.ReadLine());
             int b = Convert.ToInt32(Console.ReadLine());
 
-            int a4f = a * 4 / 100;
-            int b9f = b * 9 / 100;
+            double a4f = a * 4 / 100;
+            double b9f = b * 9 / 100;
 
-            double sum = ((a4f + b9f)* 10)/100.0;
+            double sum = ((a4f + b9f)* 10)/100;
 
             Console.WriteLine(sum);
-
-
-
-            
-
-
-
-
-
-
-
 
         }
     }

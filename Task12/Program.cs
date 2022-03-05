@@ -13,10 +13,10 @@ namespace Task12
             Alinan neticenin evvel 10% tap sonra ise hemin cavabin 11% tap.
           */
             
-            int a = Convert.ToInt32(Console.ReadLine());
-            int b = Convert.ToInt32(Console.ReadLine());
-            int c = Convert.ToInt32(Console.ReadLine());
-            int d = Convert.ToInt32(Console.ReadLine());
+            double a = Convert.ToDouble(Console.ReadLine());
+            double b = Convert.ToDouble(Console.ReadLine());
+            double c = Convert.ToDouble(Console.ReadLine());
+            double d = Convert.ToDouble(Console.ReadLine());
 
             if (!(a >= 100000 && a < 1000000 && 
                   b >= 100000 && b < 1000000 && 
@@ -26,6 +26,14 @@ namespace Task12
                 Console.WriteLine("6 reqemli eded deyil");
                 return;
             }
+            a *= 10; a /= 100;
+            b *= 10; b /= 100;
+            c *= 10; c /= 100;
+            d *= 10; d /= 100;
+
+            double sum = (a + b + c + d) * 15 / 100;
+            double result = (((a + b + c + d) * sum) * 10 / 100)* 11 /100;
+            Console.WriteLine(result);
             
 
 

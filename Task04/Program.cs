@@ -18,8 +18,8 @@ namespace Task04
                 Console.WriteLine("3 reqemli eded deyil");
                 return;
             }
-            int b = (a * 10) + 7;
-            double sum = (b * 7) / 100.0;
+            double b = (a * 10) + 7;
+            double sum = (b * 7) / 100;
 
             Console.WriteLine($"{sum}");
             
