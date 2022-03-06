@@ -20,8 +20,8 @@ namespace task02
                 return;
             }
             int b = a * 1000;
-            int c = a + b;
-            Console.WriteLine(c);
+            b += a;
+            Console.WriteLine(b);
             
 
 

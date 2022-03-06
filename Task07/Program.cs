@@ -32,20 +32,11 @@ namespace Task07
             
             double c = a + b;
 
-
-            if (c < 100000)
-            {
-                double d = (c * 10) + 5;
-                double sum = d * 5 / 100.0;
-                Console.WriteLine($"{sum}");
-            }
-            else if (c < 1000000)
-            {
-                double d = (c * 10) + 5;
-                double sum = d * 5 / 100.0;
-                Console.WriteLine($"{sum}");
-            }
+            c *= 10; c += 5;
+            c *= 5;  c /= 100;
             
+            Console.WriteLine(c);
+     
         }
     }
 }

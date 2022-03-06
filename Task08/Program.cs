@@ -13,12 +13,22 @@ namespace Task08
           */
 
             int a = Convert.ToInt32(Console.ReadLine());
+            if (!(a >= 1000 && a < 10000))
+            {
+                Console.WriteLine("4 reqemli deyil");
+                return;
+            }
             int b = Convert.ToInt32(Console.ReadLine());
+            if (!(b >= 1000000 && b < 10000000))
+            {
+                Console.WriteLine("7 reqemli deyil");
+                return;
+            }
 
-            double a4f = a * 4 / 100;
-            double b9f = b * 9 / 100;
+            a *= 4; a /= 100;
+            b *= 9; b /= 100;
 
-            double sum = ((a4f + b9f)* 10)/100;
+            double sum = ((a + b)* 10)/100;
 
             Console.WriteLine(sum);
 

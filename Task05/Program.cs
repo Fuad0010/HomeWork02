@@ -12,9 +12,9 @@ namespace Task05
             Alinan cavabin 44 % tap.
          */
 
-            int a = Convert.ToInt32(Console.ReadLine());
+            double a = Convert.ToDouble(Console.ReadLine());
 
-            double procent = 0;
+            
 
             if (a < 1000 || a >= 10000)
             {
@@ -23,10 +23,13 @@ namespace Task05
             }
             else
             {
-                a = (a + 40000) * 100 + 44;
-                procent = a * 44 / 100.0;
+                a += 40000; 
+                a += 100; 
+                a+= 44;
+                a *= 44; 
+                a/= 100;
 
-                Console.WriteLine($"{a}\n{procent}");
+                Console.WriteLine(a);
             }
 
         }
