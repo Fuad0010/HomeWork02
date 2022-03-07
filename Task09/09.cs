@@ -17,11 +17,13 @@ namespace Task09
 
             if (!(a >= 100000 && a < 1000000 &&
                   b >= 100000 && b < 1000000 &&
-                  c >= 100000 && c < 1000000 ))
+                  c >= 100000 && c < 1000000))
             {
                 Console.WriteLine("6 reqemli eded deyil");
                 return;
             }
+            else
+            {
                 a = (a * 10) / 100;
                 b = (b * 10) / 100;
                 c = (c * 10) / 100;
@@ -31,7 +33,7 @@ namespace Task09
                 double sum = a * 10 / 100;
 
                 Console.WriteLine($"{sum}");
-
+            }
 
             
         }

@@ -15,23 +15,24 @@ namespace Task10
             double a = Convert.ToDouble (Console.ReadLine());
             double b = Convert.ToDouble(Console.ReadLine());
             double c = Convert.ToDouble(Console.ReadLine());
-            if (!(a >= 1000 && a < 10000 && 
-                  b >= 1000 && b < 10000 && 
-                  c >= 1000 && c < 10000 ))
+            if (!(a >= 1000 && a < 10000 &&
+                  b >= 1000 && b < 10000 &&
+                  c >= 1000 && c < 10000))
             {
                 Console.WriteLine("4 reqemli eded deyil");
                 return;
             }
+            else
+            {
+                a = (a * 1) / 100;
+                b = (b * 2) / 100;
+                double C = (c * 3) / 100;
 
-            a = (a * 1) / 100;
-            b = (b * 2) / 100;
-            double C = (c * 3) / 100;
-
-            double sum = a - b - C;
-            c = (c * 7) / 100;
-            sum += c;
-            Console.WriteLine(sum);
-
+                double sum = a - b - C;
+                c = (c * 7) / 100;
+                sum += c;
+                Console.WriteLine(sum);
+            }
 
 
 

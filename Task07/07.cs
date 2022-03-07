@@ -22,21 +22,23 @@ namespace Task07
                 Console.WriteLine("5 reqemli eded deyil");
                 return;
             }
-
-            double c = a + b;
-            if (c < 100000)
-            {
-                c += 500000;
-                c *= 10; c += 5;
-                c *= 5; c /= 100;
-            }
             else
-            { 
-                c += 5000000;
-                c *= 10; c += 5;
-                c *= 5; c /= 100;
-            }
-            Console.WriteLine(c);
+            {
+                double c = a + b;
+                if (c < 100000)
+                {
+                    c += 500000;
+                    c *= 10; c += 5;
+                    c *= 5; c /= 100;
+                }
+                else
+                {
+                    c += 5000000;
+                    c *= 10; c += 5;
+                    c *= 5; c /= 100;
+                }
+                Console.WriteLine(c);
+            }        
         }
     }
 }

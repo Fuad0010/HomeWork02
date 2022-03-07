@@ -24,14 +24,15 @@ namespace Task08
                 Console.WriteLine("7 reqemli deyil");
                 return;
             }
+            else
+            {
+                a *= 4; a /= 100;
+                b *= 9; b /= 100;
 
-            a *= 4; a /= 100;
-            b *= 9; b /= 100;
+                double sum = ((a + b) * 10) / 100;
 
-            double sum = ((a + b)* 10)/100;
-
-            Console.WriteLine(sum);
-
+                Console.WriteLine(sum);
+            }
         }
     }
 }

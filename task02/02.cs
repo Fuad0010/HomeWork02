@@ -13,16 +13,18 @@ namespace task02
           */
             
             int a = Convert.ToInt32(Console.ReadLine());
-            
+
             if (a < 100 || a >= 1000)
             {
                 Console.WriteLine("3 reqemli eded deyil");
                 return;
             }
-            int b = a * 1000;
-            b += a;
-            Console.WriteLine(b);
-            
+            else
+            {
+                int b = a * 1000;
+                b += a;
+                Console.WriteLine(b);
+            }
 
 
 

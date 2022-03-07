@@ -4,15 +4,16 @@ GET a
 
 IF !(a < 10000 && a >= 1000) THEN
 
- SHOW "a ededi 4 reqemli olmalidir"
- RETURN
+	SHOW "a ededi 4 reqemli olmalidir"
+	RETURN
+
+ELSE
+
+	CALCULATE a+=70000
+	CALCULATE a=a*10+8
+	
+	SHOW a
 
 ENDIF
-
-
-CALCULATE a+=70000
-CALCULATE a=a*10+8
-
-SHOW a
 
 ENDPROGRAM

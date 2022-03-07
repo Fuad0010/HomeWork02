@@ -26,25 +26,27 @@ namespace Task12
                 Console.WriteLine("6 reqemli eded deyil");
                 return;
             }
-            double A = (a * 10) / 100;
-            double B = (b * 10) / 100;
-            double C = (c * 10) / 100;
-            double D = (d * 10) / 100;
+            else
+            {
+                double A = (a * 10) / 100;
+                double B = (b * 10) / 100;
+                double C = (c * 10) / 100;
+                double D = (d * 10) / 100;
 
-            a = (a * 15) / 100;
-            b = (b * 15) / 100;
-            c = (c * 15) / 100;
-            d = (d * 15) / 100;
+                a = (a * 15) / 100;
+                b = (b * 15) / 100;
+                c = (c * 15) / 100;
+                d = (d * 15) / 100;
 
-            double sum = A + B + C + D;
-            double result = a + b + c + d;
+                double sum = A + B + C + D;
+                double result = a + b + c + d;
 
-            result *= sum;
-            sum = (sum * 10) / 100;
-            sum = (sum * 11) / 100;
+                result *= sum;
+                sum = (sum * 10) / 100;
+                sum = (sum * 11) / 100;
 
-            Console.WriteLine(sum);
-            
+                Console.WriteLine(sum);
+            }
 
 
 

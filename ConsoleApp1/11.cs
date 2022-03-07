@@ -18,21 +18,23 @@ namespace ConsoleApp1
             double c = Convert.ToDouble(Console.ReadLine());
             double d = Convert.ToDouble(Console.ReadLine());
 
-            if (!( a >= 10000 && a < 100000 && 
-                   b >= 10000 && b < 100000 && 
+            if (!(a >= 10000 && a < 100000 &&
+                   b >= 10000 && b < 100000 &&
                    c >= 10000 && c < 100000 &&
-                   d >= 10000 && d < 100000 ))
+                   d >= 10000 && d < 100000))
             {
                 Console.WriteLine("5 reqemli eded deyil");
                 return;
             }
-            a += c;
-            b += d;
-            double sum = a * b;
-            double f3 = (c * 3) / 100;
+            else
+            {
+                a += c;
+                b += d;
+                double sum = a * b;
+                double f3 = (c * 3) / 100;
 
-            Console.WriteLine(sum - f3);
-
+                Console.WriteLine(sum - f3);
+            }
 
 
 

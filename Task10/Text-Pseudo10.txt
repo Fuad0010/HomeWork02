@@ -11,17 +11,19 @@ IF !(a >= 1000 && a < 10000 &&
      SHOW "4 reqemli eded deyil"
      RETURN
 
+else
+
+    CALCULATE a = (a * 1) / 100
+    CALCULATE b = (b * 2) / 100
+    CALCULATE C = (c * 3) / 100
+    
+    SET sum = a - b - C
+    
+    CALCULATE c = (c * 7) / 100
+    CALCULATE sum += c
+    
+    SHOW sum
+
 ENDIF
-
-CALCULATE a = (a * 1) / 100
-CALCULATE b = (b * 2) / 100
-CALCULATE C = (c * 3) / 100
-
-SET sum = a - b - C
-
-CALCULATE c = (c * 7) / 100
-CALCULATE sum += c
-
-SHOW sum
 
 ENDPROGRAM

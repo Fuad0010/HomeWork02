@@ -32,29 +32,30 @@ namespace Task13
             double e = Convert.ToDouble(Console.ReadLine());
 
             if (!(d >= 100 && d < 1000 &&
-                  e >= 100 && e < 1000 ))
+                  e >= 100 && e < 1000))
             {
                 Console.WriteLine("3 reqemli eded deyil");
                 return;
             }
+            else
+            {
+                a *= 5; a /= 100;
+                b *= 5; b /= 100;
+                c *= 5; c /= 100;
 
-            a *= 5; a /= 100;
-            b *= 5; b /= 100;
-            c *= 5; c /= 100;
+                double r5cm = a * b * c;
 
-            double r5cm = a * b * c;
+                d *= 3; d /= 100;
+                e *= 3; e /= 100;
 
-            d *= 3; d /= 100;
-            e *= 3; e /= 100;
+                double r3cm = d + e;
 
-            double r3cm = d + e;
+                r5cm *= 10; r5cm /= 100;
+                r3cm *= 10; r3cm /= 100;
 
-            r5cm *= 10; r5cm /= 100;
-            r3cm *= 10; r3cm /= 100;
-
-            double sum = r5cm + r3cm;
-            Console.WriteLine(sum);
-
+                double sum = r5cm + r3cm;
+                Console.WriteLine(sum);
+            }
 
 
 

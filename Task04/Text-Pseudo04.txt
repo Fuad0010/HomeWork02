@@ -7,11 +7,13 @@ IF a < 100 || a >= 1000 THEN
 	SHOW "3 reqemli eded deyil"
 	RETURN	
 
+ELSE
+
+	INIT b = (a * 10) + 7;
+	INIT sum = (b * 7) / 100;
+
+	SHOW sum
+
 ENDIF
-
-INIT b = (a * 10) + 7;
-INIT sum = (b * 7) / 100;
-
-SHOW sum
 
 ENDPROGRAM

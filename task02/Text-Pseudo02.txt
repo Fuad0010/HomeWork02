@@ -5,11 +5,13 @@ GET a
 IF a < 100 || a >= 1000 THEN
 	SHOW "3 reqemli eded deyil"
 	RETURN
+ELSE
+
+	INIT b = a * 1000
+	CALCULATE b += a
+
+	SHOW b
+
 ENDIF
-
-INIT b = a * 1000
-CALCULATE b += a
-
-SHOW b
 
 ENDPROGRAM

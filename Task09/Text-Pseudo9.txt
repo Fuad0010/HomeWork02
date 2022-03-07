@@ -11,16 +11,18 @@ IF !(a >= 100000 && a < 1000000 &&
      SHOW "6 reqemli deyil"
      RETURN
 
+ELSE
+
+    CALCULATE a = (a * 10) / 100
+    CALCULATE b = (b * 10) / 100
+    CALCULATE c = (c * 10) / 100
+    
+    CALCULATE a = a + b + c
+    
+    INIT sum = a * 10 / 100
+    
+    SHOW sum
+
 ENDIF
-
-CALCULATE a = (a * 10) / 100
-CALCULATE b = (b * 10) / 100
-CALCULATE c = (c * 10) / 100
-
-CALCULATE a = a + b + c
-
-INIT sum = a * 10 / 100
-
-SHOW sum
 
 ENDPROGRAM

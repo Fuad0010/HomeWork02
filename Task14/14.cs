@@ -27,20 +27,21 @@ namespace Task14
                   c >= 100000 && c < 1000000 &&
                   d >= 100000 && d < 1000000 &&
                   e >= 100000 && e < 1000000 &&
-                  f >= 100000 && f < 1000000 ))
+                  f >= 100000 && f < 1000000))
             {
                 Console.WriteLine("6 reqemli eded deyil");
                 return;
             }
+            else
+            {
+                double abcdef = a + b + c + d + e + f;
 
-            double abcdef = a + b + c + d + e + f;
+                double ac = a + c;
 
-            double ac = a + c;
+                abcdef = (((((abcdef - ac) * 10) / 100) + e + f) * 11) / 100;
 
-            abcdef = (((((abcdef - ac) * 10) / 100) + e + f) * 11) / 100;
-
-            Console.WriteLine(abcdef);
-
+                Console.WriteLine(abcdef);
+            }
 
         }
     }

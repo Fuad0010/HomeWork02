@@ -17,12 +17,14 @@ namespace Task03
                 Console.WriteLine("5 reqemli eded deyil");
                 return;
             }
-            double b = (a * 18) / 100;
-            double c = (a * 3) / 100;
+            else
+            {
+                double b = (a * 18) / 100;
+                double c = (a * 3) / 100;
 
-            Console.WriteLine($"18% -- {b}");
-            Console.WriteLine($"3% -- {c}");
-            
+                Console.WriteLine($"18% -- {b}");
+                Console.WriteLine($"3% -- {c}");
+            }
 
 
 

@@ -13,17 +13,18 @@ namespace Task06
           */
             
           double a = Convert.ToDouble(Console.ReadLine());
-            
+
             if (a < 1000 || a >= 10000)
             {
                 Console.WriteLine("4 reqemli eded deyil");
-                    return;
+                return;
             }
-
-            a *= 20;a /= 100;
-            a *= 10;a/= 100;
-            a *= a;
-            
+            else
+            {
+                a *= 20; a /= 100;
+                a *= 10; a /= 100;
+                a *= a;
+            }
 
                 Console.WriteLine(a);
             

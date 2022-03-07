@@ -11,18 +11,20 @@ namespace Task04
             Sonra cavabin 7% tap
           */
             int a = Convert.ToInt32(Console.ReadLine());
-                    
-            
+
+
             if (a < 100 || a >= 1000)
             {
                 Console.WriteLine("3 reqemli eded deyil");
                 return;
             }
-            double b = (a * 10) + 7;
-            double sum = (b * 7) / 100;
+            else
+            {
+                double b = (a * 10) + 7;
+                double sum = (b * 7) / 100;
 
-            Console.WriteLine(sum);
-            
+                Console.WriteLine(sum);
+            }
             
         
         

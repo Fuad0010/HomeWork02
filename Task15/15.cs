@@ -52,43 +52,45 @@ namespace Task15
             }
             
             double a7 = Convert.ToDouble(Console.ReadLine());
-            
-            if (!(a7 >= 100000 && a7 < 1000000 ))
+
+            if (!(a7 >= 100000 && a7 < 1000000))
             {
                 Console.WriteLine("6 reqemli eded deyil");
                 return;
             }
-            
-            //3 reqemli ededleri topla ,
-            double a1pa2 = a1 + a2;
-            
-            //sonra bunlarin ustune gel 4 reqemli ededlerin bir birine vurulmasindan alinan cavabi.
-            double a3va4 = a3 * a4;a1pa2 += a3va4;
-            
-            //Sonra neticenin axirina 7 reqemini artir. 
-            a1pa2 *= 10;a1pa2 += 7;
-            
-            //Sonra cavabin ustune gel 5 reqemli ededlerin cemini.
-            double a5pa6 = a5 + a6;a1pa2 += a5pa6;
-            
-            //Sonra neticeden cix 3 reqemli ededlerin bir birine vurulmasindan alinan cavabin axirina 1 artirilmish variantini.
-            double a1va2 = ((a1 * a2) * 10) + 1;a1pa2 -= a1va2;
+            else
+            {
+                //3 reqemli ededleri topla ,
+                double a1pa2 = a1 + a2;
 
-            //Sonra alinan cavabin ustune gel 6 reqemli ededi.
-            a1pa2 += a7;
+                //sonra bunlarin ustune gel 4 reqemli ededlerin bir birine vurulmasindan alinan cavabi.
+                double a3va4 = a3 * a4; a1pa2 += a3va4;
 
-            //Sonra alinan cavabdan cix 3 reqemli ve 4 reqemli ededlerin cemini.
-            double a12p34 = a1 + a2 + a3 + a4; a1pa2 -= a12p34;
+                //Sonra neticenin axirina 7 reqemini artir. 
+                a1pa2 *= 10; a1pa2 += 7;
 
-            //Sonra alinan cavabin 18 % -ni sonra 3 % -ni sonra 1 % tap.
-            a1pa2 *= 18;a1pa2 /= 100;a1pa2 *= 3;a1pa2 /= 100;a1pa2 /= 100;
+                //Sonra cavabin ustune gel 5 reqemli ededlerin cemini.
+                double a5pa6 = a5 + a6; a1pa2 += a5pa6;
 
-            //Sonra alinan cavabin ustune 5 reqemli ededlerin cemini gel.
-            a1pa2 += a5pa6;                                                 
+                //Sonra neticeden cix 3 reqemli ededlerin bir birine vurulmasindan alinan cavabin axirina 1 artirilmish variantini.
+                double a1va2 = ((a1 * a2) * 10) + 1; a1pa2 -= a1va2;
 
-            Console.WriteLine(a1pa2);
-        
-            //Biraz qariwiq alindi amma optimal olundu))
+                //Sonra alinan cavabin ustune gel 6 reqemli ededi.
+                a1pa2 += a7;
+
+                //Sonra alinan cavabdan cix 3 reqemli ve 4 reqemli ededlerin cemini.
+                double a12p34 = a1 + a2 + a3 + a4; a1pa2 -= a12p34;
+
+                //Sonra alinan cavabin 18 % -ni sonra 3 % -ni sonra 1 % tap.
+                a1pa2 *= 18; a1pa2 /= 100; a1pa2 *= 3; a1pa2 /= 100; a1pa2 /= 100;
+
+                //Sonra alinan cavabin ustune 5 reqemli ededlerin cemini gel.
+                a1pa2 += a5pa6;
+
+                Console.WriteLine(a1pa2);
+
+                //Biraz qariwiq alindi amma optimal olundu))
+            }
         }
     }
 }
