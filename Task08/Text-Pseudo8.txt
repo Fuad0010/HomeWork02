@@ -1,24 +1,24 @@
-﻿start Task08
+﻿Program Task08
 
-SET a = READ
+GET a
 
 IF !(a >= 1000 && a < 10000) THEN
-	SHOW 4 reqemli eded deyil
-	return
+	SHOW "4 reqemli eded deyil"
+	RETURN
 ENDIF
 
-SET b = READ
+GET b
 
 IF !(b >= 1000000 && b < 10000000) THEN
-	SHOW 7 reqemli eded deyil
-	return
+	SHOW "7 reqemli eded deyil"
+	RETURN
 ENDIF
 
-COMPUTE a *= 4; a /= 100;
-COMPUTE b *= 9; b /= 100;
+CALCULATE a *= 4; a /= 100
+CALCULATE b *= 9; b /= 100
 
-SET sum = ((a + b)* 10)/100
+INIT sum = ((a + b)* 10)/100
 
 SHOW sum
 
-endprogram
+ENDPROGRAM

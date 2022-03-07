@@ -1,25 +1,27 @@
-﻿start Task10
+﻿Program Task10
 
-SET a = READ
-SET b = READ
-SET c = READ
+GET a
+GET b
+GET c
 
 IF !(a >= 1000 && a < 10000 && 
      b >= 1000 && b < 10000 && 
      c >= 1000 && c < 10000 ) THEN
-     SHOW 4 reqemli eded deyil
-     return
+     
+     SHOW "4 reqemli eded deyil"
+     RETURN
+
 ENDIF
 
-COMPUTE a = (a * 1) / 100;
-COMPUTE b = (b * 2) / 100;
-COMPUTE C = (c * 3) / 100;
+CALCULATE a = (a * 1) / 100
+CALCULATE b = (b * 2) / 100
+CALCULATE C = (c * 3) / 100
 
-SET sum = a - b - C;
+SET sum = a - b - C
 
-COMPUTE c = (c * 7) / 100;
-COMPUTE sum += c;
+CALCULATE c = (c * 7) / 100
+CALCULATE sum += c
 
 SHOW sum
 
-endprogram
+ENDPROGRAM

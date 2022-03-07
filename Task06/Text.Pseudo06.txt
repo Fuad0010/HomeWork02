@@ -1,13 +1,17 @@
-﻿start Task06
-SET a = READ
+﻿Program Task06
+GET a 
 
 IF a < 1000 || a >= 10000 THEN
-	SHOW 4 reqemli deyil
-	return
+
+	SHOW "4 reqemli deyil"
+	RETURN
+
 ENDIF
 
-a *= 20;a /= 100;
-a *= 10;a/= 100;
-a *= a;
+CALCULATE a *= 20
+CALCULATE a /= 100
+CALCULATE a *= 10
+CALCULATE a/= 100
+CALCULATE a *= a
 
-endprogram
+ENDPROGRAM

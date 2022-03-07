@@ -18,9 +18,7 @@ namespace task01
                 Console.WriteLine("4 reqemli deyil");
                 return;
             }
-            a += 70000;
-            a *= 10;
-            a += 8;
+            a = ((a + 70000) * 10) + 8;
             Console.WriteLine(a);
 
 

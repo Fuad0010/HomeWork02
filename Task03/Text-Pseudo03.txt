@@ -1,16 +1,18 @@
-﻿start Task03
-SET a = READ
+﻿Program Task03
+
+GET a 
 
 IF a < 10000 || a >= 100000 THEN
-	SHOW 5 reqemli eded deyil
-	return;
-	ENDIF
 
-	COMPUTE b = (a * 18) / 100;
-    COMPUTE c = (a * 3 ) / 100;
+	SHOW "5 reqemli eded deyil"
+	RETURN
+
+ENDIF
+
+	INIT b = (a * 18) / 100;
+    INIT c = (a * 3 ) / 100;
 
 	SHOW 18% -- {b}
 	SHOW 3% -- {c}
 
-	endprogram
-	
+	ENDPROGRAM

@@ -1,15 +1,17 @@
-﻿start Task04
+﻿Program Task04
 
-SET a = READ;
+GET a
 
 IF a < 100 || a >= 1000 THEN
-SHOW 3 reqemli eded deyil
-return
+
+	SHOW "3 reqemli eded deyil"
+	RETURN	
+
 ENDIF
 
-COMPUTE b = (a * 10) + 7;
-COMOUTE sum = (b * 7) / 100;
+INIT b = (a * 10) + 7;
+INIT sum = (b * 7) / 100;
 
 SHOW sum
 
-endprogram
+ENDPROGRAM

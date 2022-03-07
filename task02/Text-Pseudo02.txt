@@ -1,15 +1,15 @@
-﻿start Task02
+﻿Program Task02
 
-SET a = READ;
+GET a
 
-IF a < 100 || a >= 1000; THEN
-	SHOW 3 reqemli eded deyil
-	return;
+IF a < 100 || a >= 1000 THEN
+	SHOW "3 reqemli eded deyil"
+	RETURN
 ENDIF
 
-COMPUTE b = a * 1000;
-SET += a;
+INIT b = a * 1000
+CALCULATE b += a
 
 SHOW b
 
-endprogram
+ENDPROGRAM
