@@ -10,7 +10,7 @@ namespace Task03
             Bu ededin evvel 18 % sonra ise 3 % tap
           */
            
-            int a  = Convert.ToInt32(Console.ReadLine());
+            double a  = Convert.ToInt32(Console.ReadLine());
 
             if (a < 10000 || a >= 100000)
             {
