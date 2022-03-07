@@ -24,10 +24,10 @@ namespace Task05
             else
             {
                 a += 40000; 
-                a += 100; 
-                a+= 44;
+                a *= 100; 
+                a += 44;
                 a *= 44; 
-                a/= 100;
+                a /= 100;
 
                 Console.WriteLine(a);
             }

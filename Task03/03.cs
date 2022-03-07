@@ -9,8 +9,8 @@ namespace Task03
             5 reqemli eded verilib. 
             Bu ededin evvel 18 % sonra ise 3 % tap
           */
-           
-            double a  = Convert.ToInt32(Console.ReadLine());
+
+            double a = Convert.ToDouble (Console.ReadLine());
 
             if (a < 10000 || a >= 100000)
             {

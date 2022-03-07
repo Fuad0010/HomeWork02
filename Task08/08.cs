@@ -12,13 +12,13 @@ namespace Task08
             Sonra Cavalari toplayib 10 %ni tap.
           */
 
-            int a = Convert.ToInt32(Console.ReadLine());
+            double a = Convert.ToDouble(Console.ReadLine());
             if (!(a >= 1000 && a < 10000))
             {
                 Console.WriteLine("4 reqemli deyil");
                 return;
             }
-            int b = Convert.ToInt32(Console.ReadLine());
+            double b = Convert.ToDouble(Console.ReadLine());
             if (!(b >= 1000000 && b < 10000000))
             {
                 Console.WriteLine("7 reqemli deyil");
