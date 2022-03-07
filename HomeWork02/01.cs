@@ -20,7 +20,7 @@ namespace task01
             }
             a += 70000;
             a *= 10;
-            a *= 5;
+            a += 5;
             Console.WriteLine(a);
 
 
