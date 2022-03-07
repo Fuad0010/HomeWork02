@@ -5,7 +5,7 @@ namespace task02
     internal class Program
     {
         static void Main(string[] args)
-        {/* Task 2
+        {/* Task 02
             3 reqemli eded verilib.
             Bu ededin axirina hemin ededdin ozunu yapishdir.
             example: 333= 333333;

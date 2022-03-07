@@ -1,0 +1,24 @@
+﻿start Task08
+
+SET a = READ
+
+IF !(a >= 1000 && a < 10000) THEN
+	SHOW 4 reqemli eded deyil
+	return
+ENDIF
+
+SET b = READ
+
+IF !(b >= 1000000 && b < 10000000) THEN
+	SHOW 7 reqemli eded deyil
+	return
+ENDIF
+
+COMPUTE a *= 4; a /= 100;
+COMPUTE b *= 9; b /= 100;
+
+SET sum = ((a + b)* 10)/100
+
+SHOW sum
+
+endprogram

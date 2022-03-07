@@ -1,0 +1,25 @@
+﻿start Task07
+SET a = READ
+SET b = READ
+
+IF	!(a >= 10000 && a < 100000 && THEN
+	b >= 10000 && b < 100000)
+	SHOW 5 reqemli eded deyil
+	return
+	ENDIF
+
+COMPUTE c = a + b
+
+IF c < 100000 THEN
+	c += 500000;
+	c *= 10; c += 5;
+	c *= 5; c /= 100;
+ELSE
+c += 5000000;
+c *= 10; c += 5;
+c *= 5; c /= 100;
+ENDIF
+
+SHOW c
+
+ednprogram

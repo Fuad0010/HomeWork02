@@ -5,7 +5,7 @@ namespace task01
     internal class Program
     {
         static void Main(string[] args)
-        {/* Task 1
+        {/* Task 01
             4 reqemli eded verilib.
             Bu ededin eveline 7 reqemini , 
             axirinada 8 reqemini artir. 

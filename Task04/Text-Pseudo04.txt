@@ -1,0 +1,15 @@
+﻿start Task04
+
+SET a = READ;
+
+IF a < 100 || a >= 1000 THEN
+SHOW 3 reqemli eded deyil
+return
+ENDIF
+
+COMPUTE b = (a * 10) + 7;
+COMOUTE sum = (b * 7) / 100;
+
+SHOW sum
+
+endprogram

@@ -1,0 +1,17 @@
+﻿start Task05
+
+SET a = READ
+
+IF a < 1000 || a >= 10000 THEN
+SHOW 4 reqemli deyil 
+return
+
+a += 40000; 
+a += 100; 
+a+= 44;
+a *= 44; 
+a/= 100;
+
+SHOW a
+
+endprogram

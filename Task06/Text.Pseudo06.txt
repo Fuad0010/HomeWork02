@@ -1,0 +1,13 @@
+﻿start Task06
+SET a = READ
+
+IF a < 1000 || a >= 10000 THEN
+	SHOW 4 reqemli deyil
+	return
+ENDIF
+
+a *= 20;a /= 100;
+a *= 10;a/= 100;
+a *= a;
+
+endprogram

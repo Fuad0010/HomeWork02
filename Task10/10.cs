@@ -19,7 +19,7 @@ namespace Task10
                   b >= 1000 && b < 10000 && 
                   c >= 1000 && c < 10000 ))
             {
-                Console.WriteLine("4 reqemli deyil");
+                Console.WriteLine("4 reqemli eded deyil");
                 return;
             }
 

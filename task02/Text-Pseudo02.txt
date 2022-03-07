@@ -1,0 +1,15 @@
+﻿start Task02
+
+SET a = READ;
+
+IF a < 100 || a >= 1000; THEN
+	SHOW 3 reqemli eded deyil
+	return;
+ENDIF
+
+COMPUTE b = a * 1000;
+SET += a;
+
+SHOW b
+
+endprogram

@@ -1,0 +1,25 @@
+﻿start Task10
+
+SET a = READ
+SET b = READ
+SET c = READ
+
+IF !(a >= 1000 && a < 10000 && 
+     b >= 1000 && b < 10000 && 
+     c >= 1000 && c < 10000 ) THEN
+     SHOW 4 reqemli eded deyil
+     return
+ENDIF
+
+COMPUTE a = (a * 1) / 100;
+COMPUTE b = (b * 2) / 100;
+COMPUTE c = (c * 3) / 100;
+
+SET sum = a - b - c;
+
+COMPUTE c = (c * 7) / 100;
+COMPUTE sum += c;
+
+SHOW sum
+
+endprogram
