@@ -13,9 +13,9 @@ ENDIF
 
 COMPUTE a = (a * 1) / 100;
 COMPUTE b = (b * 2) / 100;
-COMPUTE c = (c * 3) / 100;
+COMPUTE C = (c * 3) / 100;
 
-SET sum = a - b - c;
+SET sum = a - b - C;
 
 COMPUTE c = (c * 7) / 100;
 COMPUTE sum += c;

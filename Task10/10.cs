@@ -25,9 +25,9 @@ namespace Task10
 
             a = (a * 1) / 100;
             b = (b * 2) / 100;
-            c = (c * 3) / 100;
+            double C = (c * 3) / 100;
 
-            double sum = a - b - c;
+            double sum = a - b - C;
             c = (c * 7) / 100;
             sum += c;
             Console.WriteLine(sum);

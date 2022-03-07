@@ -33,15 +33,13 @@ namespace Task14
                 return;
             }
 
-            double abcdef = a + b + c + d + f;
+            double abcdef = a + b + c + d + e + f;
 
             double ac = a + c;
 
-            abcdef -= ac; abcdef*= 10;abcdef /= 100;
-            abcdef += e + f;
+            abcdef = (((((abcdef - ac) * 10) / 100) + e + f) * 11) / 100;
 
-            double sum = (abcdef * 11) / 100;
-            Console.WriteLine(sum);
+            Console.WriteLine(abcdef);
 
 
         }

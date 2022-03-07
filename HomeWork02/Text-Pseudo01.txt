@@ -9,7 +9,7 @@ ENDIF
 
 COMPUTE a += 70000;
 COMPUTE a *= 10;
-COMPUTE a *= 5;
+COMPUTE a += 8;
 
 SHOW a;
 
